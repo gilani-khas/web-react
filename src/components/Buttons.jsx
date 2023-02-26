@@ -5,12 +5,13 @@ function Buttons({ num, setCounter }) {
     setCounter(num + 3);
   }
   function minus() {
-    setCounter(num - 2);
+    if (num > 1 ? setCounter(num - 2) : setCounter(0)) {
+    }
   }
-
   function reset() {
     setCounter(0);
   }
+
   return (
     <>
       <div className='btn'>
