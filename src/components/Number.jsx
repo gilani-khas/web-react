@@ -1,7 +1,7 @@
-function Number() {
+function Number({ num }) {
   return (
     <>
-      <div className='number'>0</div>
+      <div className='number'>{num}</div>
     </>
   );
 }
